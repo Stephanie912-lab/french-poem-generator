@@ -11,12 +11,15 @@
 <body><div class="container">
     <header><strong>AI POEM GENERATOR</strong></header>
     <main>
+        <div class="form-container">
         <form  id="poem-generator-poem">
             <input type="text" placeholder="Enter the topic of a french poem" autocomplete="off" autofocus required class="instruction" id="user-instructions"/>
             <input type="submit" class="submit-button"/>
 
         </form>
-     <div class="poem" id="poem"> </div>
+        <small class="hint">i.e;flower,Paris or Cheese</small>
+        </div>
+     <div class="poem hidden" id="poem"> </div>
     
     </main>
     <script src="src/index.js"></script>

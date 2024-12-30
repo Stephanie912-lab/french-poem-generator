@@ -22,15 +22,23 @@ margin-bottom:30px;
 text-align: center;
 font-size: 30px;
  }
-
-form {
-    padding:30px;
+ .form-container{
+    padding:14px 20px;
     background-color: white;
     border-radius:10px;
+    box-shadow:0px 20px 60px rgba(65, 50,100, 0.08);
+
+ }
+
+form {
+   
     display:flex;
-    box-shadow:0px 20px 60px rgba(63,50,100,0.08);
-
-
+}
+.hint{
+    line-height:1.5;
+    margin-top:5px;
+    font-size:12px;
+    opacity:0.6;
 }
 .instruction {
     padding:10px;
@@ -61,6 +69,9 @@ padding: 14px 24px;
     border-left: 3px solid #885df1;
     box-shadow:0px 20px 60px rgba(65,50,100,0.08);
 }
+.hidden {
+    display: none;
+}
 .poem strong{
     color: #885df1;
 }
@@ -68,4 +79,17 @@ footer{
     text-align: center;
     font-size: 15px;
     margin-top: 30px;
+}
+.generating{
+    animation:blink-animation 1s steps(5,start) infinite;
+}
+@keyframes blink-animation{
+
+    to{visibility:hidden;
+    }
+}
+@-webkit-keyframes blink-animation{
+    to{
+        visibility:hidden;
+    }
 }
